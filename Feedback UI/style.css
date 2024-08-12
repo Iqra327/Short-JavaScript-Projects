@@ -19,7 +19,7 @@ body{
   color: rgb(48, 11, 86);
   box-shadow: 0px 5px 5px rgba(0, 0, 0, .4);
   border-radius: 8px;
-  padding: 10px;
+  padding: 20px;
 }
 
 .container h1{
@@ -69,4 +69,21 @@ body{
 
 .review-btn:active{
   transform: scale(0.96);
+}
+
+@media screen and (max-width: 400px){
+ 
+  .emoji-container{
+    display: block;
+    margin-block: 0px;
+  }
+
+  .rating small{
+    display: block;
+  }
+   
+  .container{
+    padding: 20px 0px;
+  }
+  
 }
