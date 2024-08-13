@@ -1,0 +1,77 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 182, 193, .4);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.container{
+  background:rgb(240, 128, 128, .4);
+  font-size: 20px;
+  text-align: center;
+  width: 80%;
+  padding:20px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px rgba(49, 47, 47, 0.3);
+  color: rgb(117, 16, 50);
+}
+
+.quote{
+  font-size: 25px;
+  font-weight: 600;
+  word-spacing: 10px;
+  padding: 10px 0px;
+}
+
+i{
+  margin: 10px;
+}
+
+.get-quote-btn{
+  padding: 15px 70px;
+  margin-block: 10px;
+  font-size: 18px;
+  background-color: rgba(232, 131, 131, .3);
+  color: rgb(117, 16, 50);
+  border: 2px;
+  border-color: rgb(255, 240, 240);
+  border-radius: 2px;
+  box-shadow: 0px 0px 10px rgba(227, 223, 223, 0.5);
+  cursor: pointer;
+}
+
+.get-quote-btn:hover{
+  background-color: rgba(117, 9, 9, 0.4);
+  color: azure;
+  box-shadow: 0px 5px 10px rgba(99, 96, 96, 0.5);
+  transition: all 0.2s ease;
+}
+
+.get-quote-btn:active{
+  box-shadow: 0px 0px 10px rgba(233, 165, 165, 0.5);
+}
+
+@media screen and (max-width: 500px) {
+  .container h1{
+  font-size: 30px;
+ } 
+
+ .quote{
+  font-size: 20px;
+ }
+
+ .get-quote-btn{
+  padding: 10px 50px;
+ }
+}
+
+@media screen and (max-width: 330px) {
+  .container{
+    margin: 15px;
+   }
+}
