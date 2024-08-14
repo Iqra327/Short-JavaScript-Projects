@@ -16,6 +16,7 @@ async function fetchApi(){
     quoteElement.innerText = 'Updating...';
     quoteWriterElement.innerText = 'Updating...';
     quoteBtnElement.innerText = 'Loading...';
+    quoteBtnElement.disabled = true;
 
     const response =await fetch(api_url, options);
     const data = await response.json();
@@ -23,6 +24,7 @@ async function fetchApi(){
     quoteElement.innerText = data[0].quote;
     quoteWriterElement.innerText = `~ ${data[0].author}`;
     quoteBtnElement.innerText = 'Get Quote';
+    quoteBtnElement.disabled = false;
     } 
     catch (error) {
       quoteContainer.innerHTML = 
