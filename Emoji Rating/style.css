@@ -1,0 +1,27 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(242, 234, 3);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container{
+  width: 400px;
+  height: 200px;
+  padding: 30px 10px;
+  background-color: azure;
+  box-shadow: 0px 4px 8px rgb(0, 0, 0, .3);
+  text-align: center;
+  border-radius: 10px;
+}
+
+.feedback-emoji{
+  margin-bottom: 30px;
+}
+
+.rating-stars{
+}
